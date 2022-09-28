@@ -1,0 +1,33 @@
+macro "Macro 2 [F1]" {
+
+//Very low density muscle (VLDM)
+setThreshold(-29, -1);
+run("Measure");
+
+//Low density muscle (LDM)
+setThreshold(0, 34);
+run("Measure");
+
+//Normal density muscle ()
+setThreshold(35, 100);
+run("Measure");
+
+//High density muscle (HDM)
+setThreshold(101, 150);
+run("Measure");
+
+//Very high density muscle
+setThreshold(151, 199);
+run("Measure");
+
+//All muscle
+setThreshold(-29, 199);
+run("Measure");
+
+//Fat
+setThreshold(-190, -30);
+run("Measure");
+
+}
+
+
